@@ -8,7 +8,8 @@ optional dependency. To do this, you can either add `[e2be]` at the end of the
 package in the `pip install` command, e.g. `pip install --upgrade maubot[e2be]`.
 Alternatively, you can install the dependencies manually (`asyncpg`,
 `python-olm`, `pycryptodome` and `unpaddedbase64`). The Docker image has all
-optional dependencies installed by default.
+optional dependencies installed by default.  
+Then, create the directory `crypto` (`mkdir crypto`).
 
 It is strongly recommended to use Postgres for the crypto database, as the
 pickle storage can get corrupted easily.
